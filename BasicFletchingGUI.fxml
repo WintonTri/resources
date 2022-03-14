@@ -103,9 +103,9 @@
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
-                  <MenuItem mnemonicParsing="false" text="Load" />
-              <MenuItem mnemonicParsing="false" text="Save" />
-                  <MenuItem mnemonicParsing="false" text="Save As" />
+                  <MenuItem fx:id="menuItemLoad" mnemonicParsing="false" onAction="#menuItemLoadPressed" text="Load" />
+              <MenuItem fx:id="menuItemSave" mnemonicParsing="false" onAction="#menuItemSavePressed" text="Save" />
+                  <MenuItem fx:id="menuItemSaveAs" mnemonicParsing="false" onAction="#menuItemSaveAsPressed" text="Save As" />
             </items>
           </Menu>
         </menus>
