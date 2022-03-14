@@ -51,7 +51,7 @@
                                     <Font name="System Bold" size="12.0" />
                                  </font>
                               </Label>
-                              <Label prefHeight="34.0" prefWidth="111.0" text="last.json" GridPane.rowIndex="1">
+                              <Label fx:id="currentFileNameLabel" prefHeight="34.0" prefWidth="111.0" text="last.json" GridPane.rowIndex="1">
                                  <padding>
                                     <Insets left="10.0" />
                                  </padding></Label>
