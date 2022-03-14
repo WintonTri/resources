@@ -11,6 +11,7 @@
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.input.KeyCodeCombination?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
@@ -104,7 +105,10 @@
           <Menu mnemonicParsing="false" text="File">
             <items>
                   <MenuItem fx:id="menuItemLoad" mnemonicParsing="false" onAction="#menuItemLoadPressed" text="Load" />
-              <MenuItem fx:id="menuItemSave" mnemonicParsing="false" onAction="#menuItemSavePressed" text="Save" />
+              <MenuItem fx:id="menuItemSave" mnemonicParsing="false" onAction="#menuItemSavePressed" text="Save">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="S" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
                   <MenuItem fx:id="menuItemSaveAs" mnemonicParsing="false" onAction="#menuItemSaveAsPressed" text="Save As" />
             </items>
           </Menu>
