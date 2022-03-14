@@ -73,7 +73,7 @@
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <TableView prefHeight="546.0" prefWidth="700.0">
+                        <TableView fx:id="fletcherTableView" prefHeight="546.0" prefWidth="700.0">
                           <columns>
                             <TableColumn fx:id="productNameColumn" prefWidth="200.0" text="Product Name" />
                             <TableColumn fx:id="levelNeededColumn" prefWidth="100.0" text="Level Needed" />
