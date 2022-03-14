@@ -75,12 +75,12 @@
                      <children>
                         <TableView fx:id="fletcherTableView" prefHeight="546.0" prefWidth="700.0">
                           <columns>
-                            <TableColumn fx:id="productNameColumn" prefWidth="200.0" text="Product Name" />
-                            <TableColumn fx:id="levelNeededColumn" prefWidth="100.0" text="Level Needed" />
-                              <TableColumn fx:id="disableAtLevelColumn" prefWidth="100.0" text="Disable At Level" />
-                              <TableColumn fx:id="restockAmountColumn" prefWidth="100.0" text="Restock Amount" />
-                              <TableColumn fx:id="sellProductColumn" prefWidth="100.0" text="Sell Product?" />
-                              <TableColumn fx:id="enabledColumn" prefWidth="100.0" text="Enabled?" />
+                            <TableColumn fx:id="productNameColumn" prefWidth="200.0" resizable="false" text="Product Name" />
+                            <TableColumn fx:id="levelNeededColumn" prefWidth="100.0" resizable="false" text="Level Needed" />
+                              <TableColumn fx:id="disableAtLevelColumn" prefWidth="100.0" resizable="false" text="Disable At Level" />
+                              <TableColumn fx:id="restockAmountColumn" prefWidth="100.0" resizable="false" text="Restock Amount" />
+                              <TableColumn fx:id="sellProductColumn" prefWidth="100.0" resizable="false" text="Sell Product?" />
+                              <TableColumn fx:id="enabledColumn" prefWidth="100.0" resizable="false" text="Enabled?" />
                           </columns>
                         </TableView>
                      </children>
