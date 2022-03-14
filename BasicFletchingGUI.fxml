@@ -104,7 +104,7 @@
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
-                  <MenuItem fx:id="menuItemNew" mnemonicParsing="false" text="New" />
+                  <MenuItem fx:id="menuItemNew" mnemonicParsing="false" onAction="#menuItemNewPressed" text="New" />
                   <MenuItem fx:id="menuItemLoad" mnemonicParsing="false" onAction="#menuItemLoadPressed" text="Load" />
               <MenuItem fx:id="menuItemSave" mnemonicParsing="false" onAction="#menuItemSavePressed" text="Save">
                      <accelerator>
