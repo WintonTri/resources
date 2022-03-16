@@ -106,7 +106,7 @@
       </MenuBar>
    </top>
    <center>
-      <TableView fx:id="fletcherTableView" prefHeight="555.0" prefWidth="666.0" style="-fx-background-color: #3C3C3C; -fx-border-color: #000000;" BorderPane.alignment="CENTER">
+      <TableView fx:id="fletcherTableView" maxWidth="666.0" minWidth="666.0" prefHeight="555.0" prefWidth="666.0" style="-fx-background-color: #3C3C3C; -fx-border-color: #000000;" BorderPane.alignment="CENTER">
         <columns>
           <TableColumn fx:id="productNameColumn" prefWidth="166.0" resizable="false" text="Product Name" />
           <TableColumn fx:id="levelNeededColumn" prefWidth="100.0" resizable="false" text="Level Needed" />
