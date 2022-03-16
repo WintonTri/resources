@@ -21,12 +21,15 @@
    <left>
       <AnchorPane maxHeight="500.0" prefHeight="500.0" prefWidth="200.0" BorderPane.alignment="TOP_LEFT">
          <children>
-            <VBox prefHeight="575.0" prefWidth="200.0">
+            <VBox prefHeight="575.0" prefWidth="200.0" style="-fx-border-color: #000000;">
                <children>
-                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="55.0" prefWidth="200.0" text="BasicFletcher" textFill="WHITE">
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="55.0" prefWidth="180.0" style="-fx-border-color: #000000; -fx-background-color: #373E43;" text="BasicFletcher" textFill="WHITE">
                      <font>
-                        <Font name="Yu Gothic Medium" size="20.0" />
+                        <Font name="Yu Gothic Medium" size="22.0" />
                      </font>
+                     <VBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </VBox.margin>
                   </Label>
                   <AnchorPane prefHeight="466.0" prefWidth="200.0">
                      <children>
@@ -65,9 +68,13 @@
                            </children>
                         </GridPane>
                         <Label fx:id="itemDataLabel" alignment="TOP_LEFT" layoutX="10.0" layoutY="120.0" prefHeight="250.0" prefWidth="180.0" text="Click on an item to view data." textFill="WHITE" />
+                        <Button fx:id="startButton" layoutX="10.0" layoutY="449.0" mnemonicParsing="false" onAction="#startButtonPressed" prefHeight="20.0" prefWidth="180.0" style="-fx-background-color: #373E43; -fx-border-color: #000000;" text="Start Script" textFill="WHITE">
+                           <font>
+                              <Font name="Yu Gothic Medium" size="24.0" />
+                           </font>
+                        </Button>
                      </children>
                   </AnchorPane>
-                  <Button fx:id="startButton" mnemonicParsing="false" onAction="#startButtonPressed" prefHeight="54.0" prefWidth="200.0" text="Start Script" />
                </children>
             </VBox>
          </children>
@@ -96,15 +103,18 @@
       </MenuBar>
    </top>
    <center>
-      <TableView fx:id="fletcherTableView" prefHeight="700.0" style="-fx-background-color: #3C3C3C;" BorderPane.alignment="CENTER">
+      <TableView fx:id="fletcherTableView" prefHeight="555.0" prefWidth="658.0" style="-fx-background-color: #3C3C3C;" BorderPane.alignment="CENTER">
         <columns>
-          <TableColumn fx:id="productNameColumn" prefWidth="200.0" resizable="false" text="Product Name" />
+          <TableColumn fx:id="productNameColumn" prefWidth="175.0" resizable="false" text="Product Name" />
           <TableColumn fx:id="levelNeededColumn" prefWidth="100.0" resizable="false" text="Level Needed" />
             <TableColumn fx:id="disableAtLevelColumn" prefWidth="100.0" resizable="false" text="Disable At Level" />
             <TableColumn fx:id="restockAmountColumn" prefWidth="100.0" resizable="false" text="Restocking" />
             <TableColumn fx:id="sellProductColumn" prefWidth="100.0" resizable="false" text="Sell" />
             <TableColumn fx:id="enabledColumn" prefWidth="100.0" resizable="false" text="Enable" />
         </columns>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
       </TableView>
    </center>
 </BorderPane>
