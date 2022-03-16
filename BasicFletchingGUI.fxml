@@ -6,9 +6,6 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.ScrollPane?>
-<?import javafx.scene.control.Tab?>
-<?import javafx.scene.control.TabPane?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.input.KeyCodeCombination?>
@@ -28,7 +25,7 @@
                <children>
                   <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="55.0" prefWidth="200.0" text="BasicFletcher">
                      <font>
-                        <Font name="System Bold" size="20.0" />
+                        <Font name="Yu Gothic Medium" size="20.0" />
                      </font>
                   </Label>
                   <AnchorPane prefHeight="466.0" prefWidth="200.0">
@@ -67,7 +64,7 @@
                               </Label>
                            </children>
                         </GridPane>
-                        <Label fx:id="itemDataLabel" alignment="TOP_LEFT" layoutX="10.0" layoutY="120.0" prefHeight="250.0" prefWidth="180.0" text="Click on a product to view data." />
+                        <Label fx:id="itemDataLabel" alignment="TOP_LEFT" layoutX="10.0" layoutY="120.0" prefHeight="250.0" prefWidth="180.0" text="Click on an item to view data." />
                      </children>
                   </AnchorPane>
                   <Button fx:id="startButton" mnemonicParsing="false" onAction="#startButtonPressed" prefHeight="54.0" prefWidth="200.0" text="Start Script" />
@@ -76,39 +73,6 @@
          </children>
       </AnchorPane>
    </left>
-   <center>
-      <TabPane prefHeight="200.0" prefWidth="700.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
-        <tabs>
-          <Tab text="Items">
-            <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                     <children>
-                        <TableView fx:id="fletcherTableView" prefHeight="545.0">
-                          <columns>
-                            <TableColumn fx:id="productNameColumn" prefWidth="200.0" resizable="false" text="Product Name" />
-                            <TableColumn fx:id="levelNeededColumn" prefWidth="100.0" resizable="false" text="Level Needed" />
-                              <TableColumn fx:id="disableAtLevelColumn" prefWidth="100.0" resizable="false" text="Disable At Level" />
-                              <TableColumn fx:id="restockAmountColumn" prefWidth="100.0" resizable="false" text="Restock Amount" />
-                              <TableColumn fx:id="sellProductColumn" prefWidth="100.0" resizable="false" text="Sell Product?" />
-                              <TableColumn fx:id="enabledColumn" prefWidth="100.0" resizable="false" text="Enabled?" />
-                          </columns>
-                        </TableView>
-                     </children>
-                  </AnchorPane>
-            </content>
-          </Tab>
-          <Tab text="Advanced">
-               <content>
-                  <ScrollPane prefHeight="200.0" prefWidth="200.0">
-                    <content>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="545.0" prefWidth="700.0" />
-                    </content>
-                  </ScrollPane>
-               </content>
-          </Tab>
-        </tabs>
-      </TabPane>
-   </center>
    <top>
       <MenuBar BorderPane.alignment="CENTER">
         <menus>
@@ -126,4 +90,16 @@
         </menus>
       </MenuBar>
    </top>
+   <center>
+      <TableView fx:id="fletcherTableView" prefHeight="545.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="productNameColumn" prefWidth="200.0" resizable="false" text="Product Name" />
+          <TableColumn fx:id="levelNeededColumn" prefWidth="100.0" resizable="false" text="Level Needed" />
+            <TableColumn fx:id="disableAtLevelColumn" prefWidth="100.0" resizable="false" text="Disable At Level" />
+            <TableColumn fx:id="restockAmountColumn" prefWidth="100.0" resizable="false" text="Restock Amount" />
+            <TableColumn fx:id="sellProductColumn" prefWidth="100.0" resizable="false" text="Sell Product?" />
+            <TableColumn fx:id="enabledColumn" prefWidth="100.0" resizable="false" text="Enabled?" />
+        </columns>
+      </TableView>
+   </center>
 </BorderPane>
