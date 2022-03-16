@@ -108,7 +108,7 @@
    <center>
       <TableView fx:id="fletcherTableView" style="-fx-background-color: #3C3C3C; -fx-border-color: #000000;" BorderPane.alignment="CENTER">
         <columns>
-          <TableColumn fx:id="productNameColumn" maxWidth="125.0" minWidth="125.0" prefWidth="125.0" resizable="false" text="Product Name" />
+          <TableColumn fx:id="productNameColumn" maxWidth="144.0" minWidth="144.0" prefWidth="144.0" resizable="false" text="Product Name" />
           <TableColumn fx:id="levelNeededColumn" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" resizable="false" text="Level Needed" />
             <TableColumn fx:id="disableAtLevelColumn" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" resizable="false" text="Disable At Level" />
             <TableColumn fx:id="restockAmountColumn" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" resizable="false" text="Restocking" />
