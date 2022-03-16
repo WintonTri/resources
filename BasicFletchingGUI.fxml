@@ -17,7 +17,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="600.0" maxWidth="900.0" minHeight="600.0" minWidth="900.0" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #6C6C6C; -fx-border-color: #000000;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scripts.main_package.publics.fletch.gui.FletchController">
+<BorderPane maxHeight="600.0" maxWidth="1000.0" minHeight="600.0" minWidth="0.0" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #6C6C6C; -fx-border-color: #000000;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scripts.main_package.publics.fletch.gui.FletchController">
    <left>
       <AnchorPane maxHeight="500.0" prefHeight="500.0" prefWidth="200.0" style="-fx-background-color: #3C3C3C;" BorderPane.alignment="TOP_LEFT">
          <children>
@@ -106,9 +106,9 @@
       </MenuBar>
    </top>
    <center>
-      <TableView fx:id="fletcherTableView" prefHeight="555.0" prefWidth="658.0" style="-fx-background-color: #3C3C3C; -fx-border-color: #000000;" BorderPane.alignment="CENTER">
+      <TableView fx:id="fletcherTableView" prefHeight="555.0" prefWidth="666.0" style="-fx-background-color: #3C3C3C; -fx-border-color: #000000;" BorderPane.alignment="CENTER">
         <columns>
-          <TableColumn fx:id="productNameColumn" prefWidth="175.0" resizable="false" text="Product Name" />
+          <TableColumn fx:id="productNameColumn" prefWidth="166.0" resizable="false" text="Product Name" />
           <TableColumn fx:id="levelNeededColumn" prefWidth="100.0" resizable="false" text="Level Needed" />
             <TableColumn fx:id="disableAtLevelColumn" prefWidth="100.0" resizable="false" text="Disable At Level" />
             <TableColumn fx:id="restockAmountColumn" prefWidth="100.0" resizable="false" text="Restocking" />
