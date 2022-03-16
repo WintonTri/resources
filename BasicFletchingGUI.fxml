@@ -106,14 +106,14 @@
       </MenuBar>
    </top>
    <center>
-      <TableView fx:id="fletcherTableView" maxWidth="666.0" minWidth="666.0" prefHeight="555.0" prefWidth="690.0" style="-fx-background-color: #3C3C3C; -fx-border-color: #000000;" BorderPane.alignment="CENTER">
+      <TableView fx:id="fletcherTableView" style="-fx-background-color: #3C3C3C; -fx-border-color: #000000;" BorderPane.alignment="CENTER">
         <columns>
           <TableColumn fx:id="productNameColumn" maxWidth="166.0" minWidth="166.0" prefWidth="166.0" resizable="false" text="Product Name" />
           <TableColumn fx:id="levelNeededColumn" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" resizable="false" text="Level Needed" />
             <TableColumn fx:id="disableAtLevelColumn" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" resizable="false" text="Disable At Level" />
             <TableColumn fx:id="restockAmountColumn" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" resizable="false" text="Restocking" />
-            <TableColumn fx:id="sellProductColumn" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" resizable="false" text="Sell" />
-            <TableColumn fx:id="enabledColumn" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" resizable="false" text="Enable" />
+            <TableColumn fx:id="sellProductColumn" maxWidth="89.0" minWidth="89.0" prefWidth="89.0" resizable="false" text="Sell" />
+            <TableColumn fx:id="enabledColumn" maxWidth="89.0" minWidth="89.0" prefWidth="89.0" resizable="false" text="Enable" />
         </columns>
          <BorderPane.margin>
             <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
@@ -121,6 +121,9 @@
          <columnResizePolicy>
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
          </columnResizePolicy>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
       </TableView>
    </center>
 </BorderPane>
