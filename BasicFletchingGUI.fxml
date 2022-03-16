@@ -17,13 +17,13 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="600.0" maxWidth="900.0" minHeight="600.0" minWidth="900.0" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scripts.main_package.publics.fletch.gui.FletchController">
+<BorderPane maxHeight="600.0" maxWidth="900.0" minHeight="600.0" minWidth="900.0" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #3C3C3C;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scripts.main_package.publics.fletch.gui.FletchController">
    <left>
       <AnchorPane maxHeight="500.0" prefHeight="500.0" prefWidth="200.0" BorderPane.alignment="TOP_LEFT">
          <children>
             <VBox prefHeight="575.0" prefWidth="200.0">
                <children>
-                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="55.0" prefWidth="200.0" text="BasicFletcher">
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="55.0" prefWidth="200.0" text="BasicFletcher" textFill="WHITE">
                      <font>
                         <Font name="Yu Gothic Medium" size="20.0" />
                      </font>
@@ -42,7 +42,7 @@
                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                           </rowConstraints>
                            <children>
-                              <Label text="Current File:" underline="true">
+                              <Label text="Current File:" textFill="WHITE" underline="true">
                                  <GridPane.margin>
                                     <Insets left="10.0" />
                                  </GridPane.margin>
@@ -50,11 +50,11 @@
                                     <Font name="System Bold" size="12.0" />
                                  </font>
                               </Label>
-                              <Label fx:id="currentFileNameLabel" prefHeight="34.0" prefWidth="111.0" text="last.json" GridPane.rowIndex="1">
+                              <Label fx:id="currentFileNameLabel" prefHeight="34.0" prefWidth="111.0" text="last.json" textFill="WHITE" GridPane.rowIndex="1">
                                  <padding>
                                     <Insets left="10.0" />
                                  </padding></Label>
-                              <Label alignment="CENTER" text="Item Data:" underline="true" GridPane.rowIndex="3">
+                              <Label alignment="CENTER" text="Item Data:" textFill="WHITE" underline="true" GridPane.rowIndex="3">
                                  <font>
                                     <Font name="System Bold" size="12.0" />
                                  </font>
@@ -64,7 +64,7 @@
                               </Label>
                            </children>
                         </GridPane>
-                        <Label fx:id="itemDataLabel" alignment="TOP_LEFT" layoutX="10.0" layoutY="120.0" prefHeight="250.0" prefWidth="180.0" text="Click on an item to view data." />
+                        <Label fx:id="itemDataLabel" alignment="TOP_LEFT" layoutX="10.0" layoutY="120.0" prefHeight="250.0" prefWidth="180.0" text="Click on an item to view data." textFill="WHITE" />
                      </children>
                   </AnchorPane>
                   <Button fx:id="startButton" mnemonicParsing="false" onAction="#startButtonPressed" prefHeight="54.0" prefWidth="200.0" text="Start Script" />
@@ -87,18 +87,23 @@
                   <MenuItem fx:id="menuItemSaveAs" mnemonicParsing="false" onAction="#menuItemSaveAsPressed" text="Save As" />
             </items>
           </Menu>
+            <Menu mnemonicParsing="false" text="Preferences">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Open" />
+              </items>
+            </Menu>
         </menus>
       </MenuBar>
    </top>
    <center>
-      <TableView fx:id="fletcherTableView" prefHeight="545.0" BorderPane.alignment="CENTER">
+      <TableView fx:id="fletcherTableView" prefHeight="700.0" style="-fx-background-color: #3C3C3C;" BorderPane.alignment="CENTER">
         <columns>
           <TableColumn fx:id="productNameColumn" prefWidth="200.0" resizable="false" text="Product Name" />
           <TableColumn fx:id="levelNeededColumn" prefWidth="100.0" resizable="false" text="Level Needed" />
             <TableColumn fx:id="disableAtLevelColumn" prefWidth="100.0" resizable="false" text="Disable At Level" />
-            <TableColumn fx:id="restockAmountColumn" prefWidth="100.0" resizable="false" text="Restock Amount" />
-            <TableColumn fx:id="sellProductColumn" prefWidth="100.0" resizable="false" text="Sell Product?" />
-            <TableColumn fx:id="enabledColumn" prefWidth="100.0" resizable="false" text="Enabled?" />
+            <TableColumn fx:id="restockAmountColumn" prefWidth="100.0" resizable="false" text="Restocking" />
+            <TableColumn fx:id="sellProductColumn" prefWidth="100.0" resizable="false" text="Sell" />
+            <TableColumn fx:id="enabledColumn" prefWidth="100.0" resizable="false" text="Enable" />
         </columns>
       </TableView>
    </center>
