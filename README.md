@@ -1,2 +1,2 @@
 # resources
-A place I use to hold icons, fxmls, etc.
+Used for icons, fxml, etc.
